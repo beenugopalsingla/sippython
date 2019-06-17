@@ -38,11 +38,15 @@ set1 = set(['india', 'pakistan', 'england', 'australia','india'])
 set1
 type(set1)
 
+set2 = {'india','pakistan','india'}
+set2
+type(set2)
+print(set2)
 
 
 #%%
 #Strings
-
+#it is also inmutable
 str1 = 'Python Programming'
 type(str1)
 
@@ -52,9 +56,21 @@ type(str1)
 list1
 for i in list1:
     print(i)
+    
+for i in list1:
+    print('beenu',i*10)
+    
+for bgs in list1:
+    print('hello',bgs+1)
 tuple1
 for i in tuple1:
     print(i)
+for i in range(1, 10, 2):
+    print(i, end=', ')
+    
+for i in range(1,1000, 5):
+    print(i, end='_')
+    
 for i in range(1, 10, 2):
     print(i, end=' ')
     
@@ -91,6 +107,7 @@ namez
 
 #%%
 #numpy - array - same data type
+#munpy single column
 import numpy as np
 np1 = np.arange(1,10)
 np1
@@ -113,10 +130,16 @@ df1 = pd.DataFrame({'rollno':[1,2,3,4], 'name': [ "Dhiraj", "Kounal", "Akhil", "
 df1
 type(df1) 
 
+beenu = pd.DataFrame({'rollno':[10,20,21], 'name':[ "apu", "pappu", "kappu"], 'marks':["btech", "bsc", "MBA"]})
+beenu
+type(beenu)
+
+beenu.columns
+
 df1.columns
 df1.describe
 df1.dtypes
-df1.shape
+df1.shape    #rows and columns
 df1.groupby('gender').size()
 df1.groupby('gender')['marks'].mean()
 df1.groupby('gender').aggregate({'marks': [np.mean, 'max']})
