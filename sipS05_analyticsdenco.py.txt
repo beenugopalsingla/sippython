@@ -23,6 +23,7 @@ df['region'] = df['region'].astype('category')
 
 df.region.value_counts()
 df.region.value_counts().plot(kind='bar')
+df.region.value_counts().plot(kind='pie')
 
 #do summary actions
 #Who are the most loyal Customers - Improve repeated sales, Target customers with low sales Volumes
@@ -32,6 +33,7 @@ df.columns
 #numpy method of counts
 df.custname.value_counts()
 df.custname.value_counts().sort_values(ascending=False)
+
 
 #pandas way
 df.groupby('custname').size()
@@ -66,8 +68,7 @@ df.groupby('custname').aggregate({'revenue':np.sum}).sort_values(by='revenue', a
 
 df.groupby('custname').aggregate({'revenue':[np.sum, 'size'] }).sort_values(by='revenue', ascending=False) #error
 
-df[['revenue','custname']].groupby('custname').agg['size'] 
-.sort_values(by='revenue', ascending=False) #error
+df[['revenue','custname']].groupby('custname').agg['size'].sort_values(by='revenue', ascending=False) #error
 
 
 
