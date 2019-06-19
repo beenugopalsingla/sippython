@@ -1,9 +1,13 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed Jun 12 11:21:58 2019
+Created on Wed Jun 19 11:22:00 2019
 
-@author: hp laptop
+@author: beenugopalsingla sip
+
 """
-#list - ordered collection of items, mutable
-list1 = [1,2,3,4,5]
-list1
+
+import pandas as pd
+
+pd.options.display.max_columns
+pd.options.display.max_rows
+pd.options.compute.use_bottleneck
