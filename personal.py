@@ -82,3 +82,69 @@ pd?
 df1 = pd.DataFrame({'rollno':[1,2,3,4], 'name':["abc","abcd","abcde","abcdef"], 'marks':[10,20,30,40]})
 df1
 type(df1)
+
+
+car = {'brand':'honda', 'model':'jazz', 'year':2017}
+car
+
+car['brand']
+car.get('brand')
+
+
+for i in car: print(i)
+for i in car: print(car[i])
+
+for i in car.values() : print(i)
+
+for i, j in car.items() : print(i,j)
+
+
+set1 = {1,2, 'SIP', 'Dhiraj', True}
+set1
+
+for i in set1 : print(i, end=':__:')
+
+'Dhiraj' in set1
+'Kounal' in set1
+
+
+set1.add('Pooja')
+set1
+
+set1.add('Pooja')
+set1
+
+set1.update(['abc',1])
+set1
+
+set1.update(['xyz'])
+set1
+
+set1.update('atoz')
+set1
+
+len(set1)
+
+set1.remove('Pooja','x')
+set1
+
+len(set1)
+
+set1.discard('a')
+set1
+
+set1.pop()
+set1.pop()
+set1
+
+
+teamA = {'India','Australia','Pakistan','England'}
+teamB = {'Bangladesh','New Zealand','West Indies','India'}
+teamA
+teamB
+
+
+teamA.union(teamB)
+teamA.difference(teamB)
+teamB.union(teamA)
+teamB.difference(teamA)
