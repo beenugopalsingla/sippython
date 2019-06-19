@@ -148,3 +148,10 @@ teamA.union(teamB)
 teamA.difference(teamB)
 teamB.union(teamA)
 teamB.difference(teamA)
+
+
+tuple1 = (1,2, 'SIP', 'Beenu', True)
+tuple1
+tuple1[0] = 99
+
+for i in tuple1 : print(i)
