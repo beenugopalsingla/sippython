@@ -29,16 +29,16 @@ mtcars[-3:]
 mtcars.rows()   #error
 
 len(mtcars)
- mtcars.count()
+mtcars.count()
 
 
 #print number of columns
- mtcars.shape
- len(mtcars.columns)
+mtcars.shape
+len(mtcars.columns)
 
 
 #print names of columns
- mtcars.columns
+mtcars.columns
 
 
 #filter rows
@@ -88,11 +88,11 @@ mtcars.iloc[[25,26,27,28,29], :]
 
 
 #find row with Mazda RX4 Wag and columns cyl, am
-mtcars.loc[['Mazda RX4'], ['cyl']]
+mtcars.loc[['Mazda RX4'], ['cyl', 'am']]
 
 
 #find row betwee Merc 280 and Volvo 142E Mazda RX4 Wag and columns cyl, am
-mtcars.loc[['Merc 280', 'Volvo 142E'], ['cyl']]
+mtcars.loc[['Merc 280', 'Volvo 142E'], ['cyl', 'am']]
 
 
 # mpg > 23 or wt < 2
